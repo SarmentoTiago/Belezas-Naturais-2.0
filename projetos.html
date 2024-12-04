@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Icon-Argentina.512.png" type="image/x-icon">
+    <title>Argentina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#">Argentina</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="origem.html">Origem</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button onclick="alert('Explorar Destinos!')">Explorar</button></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>Ushuaia</h1>
+            <p>A cidade mais austral do mundo, é o ponto de partida para cruzeiros pela Terra do Fogo e a Antártida.</p>
+        </div>
+        <img class="imgz" src="img/Ushuaia-3.jpg" alt="">
+    </header>
+    <main>
+        <section class="intro" id="sobre">
+            <h2>Projetos na Argentina</h2>
+            <p>"Um País em Constante Transformação a Argentina, com sua rica história e diversidade cultural, é um país em constante desenvolvimento, com diversos projetos em andamento em diversas áreas. Abaixo, exploraremos alguns dos principais projetos que estão moldando o futuro da Argentina"
+
+            </p>
+            
+        </section>
+        <section class="gallery" id="projetos">
+            <h2>A melhoria da infraestrutura turística, como hotéis, restaurantes e serviços de transporte, é fundamental para atrair mais turistas.
+
+                
+        </h2>
+            <div class="gallery-container">
+                <!-- Item 1 -->
+                <div class="gallery-item">
+                    <img src="img/Os-vinhedos.jpg" alt="Serengeti" onclick="openModal(this.src, 'Serengeti', 'Lar de uma das maiores migrações de animais do mundo.')">
+                    <h3>Vinhedos Mendonza</h3>
+                    <p>A Mendoza é sinônimo de vinhos de alta qualidade e paisagens deslumbrantes. As vinícolas estão localizadas em vales cercados por montanhas, criando um cenário único para a produção de vinhos..</p>
+                                        <button onclick="toggleInfo(this)">Mais Informações</button>
+                    <div class="hidden-info">A Argentina é um país que encanta os viajantes com sua rica diversidade de paisagens. Desde as montanhas nevadas dos Andes até as vastas planícies da Patagônia, o país oferece uma variedade de cenários naturais que impressionam por sua beleza e grandiosidade..
+
+                        </div>
+                </div>
+               
+                <div class="gallery-item">
+                    <img src="img/idyllic.jpg" alt="Deserto do Saara" onclick="openModal(this.src, 'Deserto do Saara', 'O maior deserto quente do mundo.')">
+                    <h3>San Juan</h3>
+                    <p>San Juan, La Rioja e Patagônia também possuem regiões vitivinícolas com características únicas. Em San Juan, os vinhedos se estendem por vastas planícies, enquanto na Patagônia, o clima frio e os ventos fortes influenciam a produção de vinhos com aromas frutados e frescos.</p>
+                    <button onclick="toggleInfo(this)">Mais Informações</button>
+                    <div class="hidden-info">A Argentina é um país que encanta os viajantes com sua rica diversidade de paisagens. Desde as montanhas nevadas dos Andes até as vastas planícies da Patagônia, o país oferece uma variedade de cenários naturais que impressionam por sua beleza e grandiosidade..</div>
+                </div>
+              
+                <div class="gallery-item">
+                    <img src="img/Salta_Reduzida.jpg" alt="Victoria Falls" onclick="openModal(this.src, 'Victoria Falls', 'Uma das maiores quedas d’água do mundo.')">
+                    <h3>Os vinhedos de Salta.</h3>
+                    <p>. Os vinhedos de Salta estão localizados em altitudes elevadas, nos pés da Cordilheira dos Andes. O clima frio e seco, combinado com os solos ricos em minerais, resultam em vinhos com características únicas..</p>
+                    <button onclick="toggleInfo(this)">Mais Informações</button>
+                    <div class="hidden-info">A Argentina é um país que encanta os viajantes com sua rica diversidade de paisagens. Desde as montanhas nevadas dos Andes até as vastas planícies da Patagônia, o país oferece uma variedade de cenários naturais que impressionam por sua beleza e grandiosidade..</div>
+                </div>
+            </div>
+        </section>
+        <section class="feedback" id="contato">
+            <h2>Deixe Seu Feedback</h2>
+            <form id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" placeholder="Escreva sua mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="feedbackMessage" class="feedback-message"></div>
+        </section>
+        <section class="footer">
+            <p>&copy; 2024 Belezas Naturais da Argentina. Todos os direitos reservados.</p>
+        </section>
+    </main>
+
+    
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

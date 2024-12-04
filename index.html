@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/Icon-Argentina.512.png" type="image/x-icon">
+    <title>Argentina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="#">Argentina</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="origem.html">Origem</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><button onclick="alert('Explorar Destinos!')">Explorar</button></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1>A Patagônia Argentina: Um Paraíso Natural</h1>
+            <p>A Patagônia argentina é um destino imperdível para quem busca paisagens deslumbrantes, aventura e contato com a natureza. Com seus vastos campos, montanhas cobertas de neve, geleiras gigantescas e lagos cristalinos, essa região oferece uma experiência única para todos os tipos de viajantes</p>
+        </div>
+        <img class="imgz" src="img/patagonia.jpeg" alt="">
+    </header>
+    <main>
+        <section class="intro" id="sobre">
+            <h2>Sobre a Argentina</h2>
+            <p>A Argentina é um país abençoado com uma diversidade de paisagens que vão desde a exuberância da selva até a imensidão dos glaciares. Suas belezas naturais são um convite para aventureiros e amantes da natureza.</p>
+        </section>
+        <section class="gallery" id="projetos">
+            <h2>Principais Destinos</h2>
+            <div class="gallery-container">
+                
+                <div class="gallery-item">
+                    <img src="img/el-calef.jpeg" alt="Serengeti" onclick="openModal(this.src, 'Serengeti', 'Lar de uma das maiores migrações de animais do mundo.')">
+                    <h3>Serengeti</h3>
+                    <p>El Chaltén: Conhecida como a "Capital Nacional do Trekking", oferece oportunidades incríveis para caminhadas e montanhismo, com o Monte Fitz Roy como principal destaque.</p>
+                    <button onclick="toggleInfo(this)">Mais Informações</button>
+                    <div class="hidden-info">A Argentina é um país que encanta os viajantes com sua rica diversidade de paisagens. Desde as montanhas nevadas dos Andes até as vastas planícies da Patagônia, o país oferece uma variedade de cenários naturais que impressionam por sua beleza e grandiosidade.</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/Perito_Moreno_Glacier_Patagonia_ArgentinaJPG.JPG" alt="Deserto do Saara" onclick="openModal(this.src, 'Deserto do Saara', 'O maior deserto quente do mundo.')">
+                    <h3>Glaciar Perito Moreno</h3>
+                    <p> Um gigante de gelo em constante movimento, oferecendo um espetáculo único da natureza.</p>
+                    <button onclick="toggleInfo(this)">Mais Informações</button>
+                    <div class="hidden-info">A Argentina é um país que encanta os viajantes com sua rica diversidade de paisagens. Desde as montanhas nevadas dos Andes até as vastas planícies da Patagônia, o país oferece uma variedade de cenários naturais que impressionam por sua beleza e grandiosidade..</div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="img/Chalten_Argentina.jpg" alt="Victoria Falls" onclick="openModal(this.src, 'Victoria Falls', 'Uma das maiores quedas d’água do mundo.')">
+                    <h3>El Chaltén</h3>
+                    <p>Parque Nacional Los Glaciares: Um paraíso para os amantes de montanhas, lagos e geleiras, com o famoso Monte Fitz Roy como protagonista.</p>
+                    <button onclick="toggleInfo(this)">Mais Informações</button>
+                    <div class="hidden-info">A Argentina é um país que encanta os viajantes com sua rica diversidade de paisagens. Desde as montanhas nevadas dos Andes até as vastas planícies da Patagônia, o país oferece uma variedade de cenários naturais que impressionam por sua beleza e grandiosidade..</div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <p>&copy; 2024 Belezas Argentina. Todos os direitos reservados.</p>
+        </section>
+    </main>
+
+    
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
